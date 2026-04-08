@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SOKO™ — Kenyan Culture. Swedish Streets.</title>
+<meta name="description" content="SOKO — Sweden's dopest Kenyan store. Authentic food, fire fashion & handcrafted drip delivered across Sverige. Real Kenyan. Real Price.">
+<meta name="keywords" content="Kenyan products Sweden, African fashion Stockholm, Kenyan food Sverige, Maasai jewelry Sweden, Ugali flour Sweden, African streetwear Stockholm, Sukuma Wiki Sweden">
+<meta property="og:title" content="SOKO™ — Kenyan Culture. Swedish Streets.">
+<meta property="og:description" content="Sweden's urban Kenyan store. Food, Fashion, Culture — shipped to your door. Prices that hit different.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700;1,900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--black:#080808;--void:#0D0D0D;--panel:#141414;--border:#1E1E1E;--border2:#2A2A2A;--lime:#AAFF00;--lime2:#C8FF33;--white:#F5F5F5;--grey:#888;--grey2:#555;--red:#FF3B30;--amber:#FFAA00;--text:#E8E8E8;--mono:'Space Mono',monospace}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--black);color:var(--text);overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;opacity:.025;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:128px}
+
+/* TICKER */
+.ticker-wrap{background:var(--lime);overflow:hidden;padding:8px 0;white-space:nowrap}
+.ticker-track{display:inline-flex;animation:ticker 30s linear infinite}
+@keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.ti{font-family:'Barlow Condensed',sans-serif;font-size:.82rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--black);padding:0 28px}
+.ti .b{margin:0 10px;opacity:.4}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:1000;background:rgba(8,8,8,.96);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:0 4%;display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:'Barlow Condensed',sans-serif;font-size:1.9rem;font-weight:900;letter-spacing:.06em;color:var(--white);text-decoration:none;display:flex;align-items:center}
+.logo .tm{font-size:.55em;vertical-align:super;color:var(--lime);margin-left:2px}
+.logo-pill{background:var(--lime);color:var(--black);font-size:.68rem;font-weight:800;letter-spacing:.1em;padding:3px 9px;margin-left:10px;border-radius:2px;font-family:'Barlow Condensed',sans-serif}
+.nav-links{display:flex;list-style:none;gap:30px}
+.nav-links a{font-family:'Barlow Condensed',sans-serif;font-size:.88rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;text-decoration:none;color:var(--grey);transition:color .2s}
+.nav-links a:hover{color:var(--lime)}
+.nav-right{display:flex;align-items:center;gap:14px}
+.nico{background:none;border:1px solid var(--border2);color:var(--grey);width:38px;height:38px;border-radius:4px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1rem;transition:all .2s}
+.nico:hover{border-color:var(--lime);color:var(--lime)}
+.cart-trig{display:flex;align-items:center;gap:8px;background:var(--lime);color:var(--black);border:none;padding:9px 18px;border-radius:4px;font-family:'Barlow Condensed',sans-serif;font-size:.9rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:all .2s}
+.cart-trig:hover{background:var(--lime2);transform:translateY(-1px)}
+.cart-trig .cnt{background:var(--black);color:var(--lime);border-radius:3px;padding:1px 7px;font-size:.72rem;font-weight:800;min-width:20px;text-align:center}
+.hburg{display:none;flex-direction:column;gap:4px;cursor:pointer;padding:8px}
+.hburg span{width:22px;height:1.5px;background:var(--white);transition:all .3s}
+
+/* HERO */
+.hero{min-height:95vh;display:grid;grid-template-columns:55% 45%;position:relative;overflow:hidden}
+.hero-left{padding:80px 5% 80px 6%;display:flex;flex-direction:column;justify-content:center;position:relative;z-index:1}
+.eyebrow{display:flex;align-items:center;gap:12px;margin-bottom:28px;animation:si .5s ease both}
+.pill{background:var(--panel);border:1px solid var(--border2);color:var(--grey);font-family:var(--mono);font-size:.65rem;padding:5px 13px;border-radius:20px;letter-spacing:.05em}
+.live-dot{display:inline-block;width:6px;height:6px;background:var(--lime);border-radius:50%;margin-right:6px;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.3)}}
+.h1{font-family:'Barlow Condensed',sans-serif;font-size:clamp(3.8rem,8.5vw,9.5rem);font-weight:900;line-height:.9;letter-spacing:-.01em;text-transform:uppercase;color:var(--white);margin-bottom:34px;animation:si .5s ease .1s both}
+.h1 .lime{color:var(--lime)}
+.h1 .out{-webkit-text-stroke:2px var(--white);color:transparent}
+.h1 em{font-style:italic;font-size:.82em;display:block;-webkit-text-stroke:1.5px var(--lime);color:transparent}
+.hero-desc{font-size:.93rem;font-weight:300;color:var(--grey);max-width:380px;line-height:1.75;margin-bottom:40px;animation:si .5s ease .2s both}
+.hero-desc strong{color:var(--lime);font-weight:600}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap;animation:si .5s ease .3s both}
+.btn-lime{background:var(--lime);color:var(--black);border:none;padding:14px 32px;font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;border-radius:4px;cursor:pointer;text-decoration:none;display:inline-block;transition:all .2s}
+.btn-lime:hover{background:var(--lime2);transform:translateY(-2px);box-shadow:0 8px 24px rgba(170,255,0,.25)}
+.btn-ghost{background:transparent;color:var(--white);border:1px solid var(--border2);padding:14px 32px;font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;border-radius:4px;cursor:pointer;text-decoration:none;display:inline-block;transition:all .2s}
+.btn-ghost:hover{border-color:var(--lime);color:var(--lime)}
+.metrics{display:flex;margin-top:52px;border-top:1px solid var(--border);padding-top:36px;animation:si .5s ease .4s both}
+.met{flex:1;padding-right:28px;border-right:1px solid var(--border);margin-right:28px}
+.met:last-child{border-right:none;margin-right:0}
+.met-n{font-family:'Barlow Condensed',sans-serif;font-size:2.4rem;font-weight:900;color:var(--lime);line-height:1;letter-spacing:-.02em}
+.met-l{font-family:var(--mono);font-size:.6rem;color:var(--grey2);letter-spacing:.08em;text-transform:uppercase;margin-top:4px}
+.hero-right{position:relative;overflow:hidden}
+.hero-img{width:100%;height:100%;object-fit:cover;filter:grayscale(20%) contrast(1.05);animation:hz 1.2s ease both}
+@keyframes hz{from{transform:scale(1.08)}to{transform:scale(1)}}
+.hero-right::before{content:'';position:absolute;inset:0;background:linear-gradient(to right,var(--black) 0%,transparent 30%);z-index:1}
+.hero-right::after{content:'KE×SE';position:absolute;bottom:24px;right:24px;font-family:'Barlow Condensed',sans-serif;font-size:.72rem;font-weight:800;letter-spacing:.2em;color:rgba(255,255,255,.25);z-index:2;writing-mode:vertical-rl}
+.htag{position:absolute;top:10%;right:10%;z-index:3;background:var(--lime);color:var(--black);padding:14px 18px;border-radius:6px;text-align:center;animation:si .6s ease .8s both}
+.htag small{display:block;font-family:var(--mono);font-size:.56rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px}
+.htag strong{display:block;font-family:'Barlow Condensed',sans-serif;font-size:1.4rem;font-weight:900;line-height:1}
+
+/* TRUST */
+.trust{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.tc{padding:22px 26px;border-right:1px solid var(--border);display:flex;align-items:center;gap:14px;transition:background .2s}
+.tc:last-child{border-right:none}
+.tc:hover{background:var(--panel)}
+.tc-ico{font-size:1.3rem;flex-shrink:0}
+.tc strong{display:block;font-family:'Barlow Condensed',sans-serif;font-size:.88rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--white)}
+.tc span{font-size:.73rem;color:var(--grey);font-weight:300}
+
+/* SECTION HEADS */
+.sec-h{display:flex;align-items:flex-end;justify-content:space-between;padding:72px 5% 36px;gap:20px}
+.kicker{font-family:var(--mono);font-size:.66rem;color:var(--lime);letter-spacing:.15em;text-transform:uppercase;margin-bottom:10px}
+.sec-t{font-family:'Barlow Condensed',sans-serif;font-size:clamp(2.4rem,5vw,5rem);font-weight:900;text-transform:uppercase;color:var(--white);line-height:.92;letter-spacing:-.01em}
+.out-t{-webkit-text-stroke:1.5px var(--grey2);color:transparent}
+.sec-count{font-family:var(--mono);font-size:.68rem;color:var(--grey2);text-align:right;letter-spacing:.04em}
+
+/* SHOP */
+.shop-area{padding:0 5% 80px}
+.tabs{display:flex;margin-bottom:44px;border-bottom:1px solid var(--border)}
+.tb{font-family:'Barlow Condensed',sans-serif;font-size:.95rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase;padding:12px 30px;background:none;border:none;color:var(--grey2);cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-1px;transition:all .2s;display:flex;align-items:center;gap:8px}
+.tb.active{color:var(--lime);border-bottom-color:var(--lime)}
+.tb:hover:not(.active){color:var(--grey)}
+.tb-badge{background:var(--border);color:var(--grey);font-family:var(--mono);font-size:.58rem;padding:2px 7px;border-radius:3px}
+.tb.active .tb-badge{background:rgba(170,255,0,.15);color:var(--lime)}
+.tp{display:none}
+.tp.active{display:block}
+
+/* PRODUCT GRID */
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(218px,1fr));gap:2px}
+.pcard{background:var(--panel);position:relative;overflow:hidden;cursor:pointer;transition:transform .3s ease;display:flex;flex-direction:column}
+.pcard:hover{transform:scale(1.01);z-index:2}
+.piw{position:relative;padding-top:120%;overflow:hidden;background:var(--void)}
+.piw img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(15%);transition:filter .4s,transform .5s}
+.pcard:hover .piw img{filter:grayscale(0%);transform:scale(1.07)}
+.pov{position:absolute;inset:0;background:linear-gradient(to top,rgba(8,8,8,.93) 0%,transparent 55%);z-index:1}
+.pbadge{position:absolute;top:14px;left:0;z-index:3;font-family:'Barlow Condensed',sans-serif;font-size:.7rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:4px 12px;border-radius:0 3px 3px 0}
+.pbadge.b-best{background:var(--lime);color:var(--black)}
+.pbadge.b-new{background:var(--amber);color:var(--black)}
+.pbadge.b-hot{background:var(--red);color:#fff}
+.pwish{position:absolute;top:12px;right:12px;z-index:3;background:rgba(8,8,8,.6);border:1px solid var(--border2);color:var(--grey);width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.9rem;cursor:pointer;backdrop-filter:blur(8px);transition:all .2s}
+.pwish:hover,.pwish.on{color:var(--red);border-color:var(--red);background:rgba(255,59,48,.1)}
+.pb{padding:15px 16px 18px;display:flex;flex-direction:column;flex:1;z-index:1;position:relative}
+.pc-cat{font-family:var(--mono);font-size:.56rem;color:var(--lime);letter-spacing:.15em;text-transform:uppercase;margin-bottom:5px}
+.pc-name{font-family:'Barlow Condensed',sans-serif;font-size:1.1rem;font-weight:700;color:var(--white);line-height:1.2;flex:1;margin-bottom:13px}
+.pc-foot{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.pc-price{font-family:'Barlow Condensed',sans-serif;font-size:1.25rem;font-weight:900;color:var(--lime);letter-spacing:.02em}
+.pc-price .eur{font-size:.82em;font-weight:600}
+.add-btn{background:var(--white);color:var(--black);border:none;padding:8px 16px;border-radius:3px;font-family:'Barlow Condensed',sans-serif;font-size:.78rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;white-space:nowrap;transition:all .2s}
+.add-btn:hover{background:var(--lime);transform:translateY(-1px)}
+.add-btn.done{background:var(--lime)}
+
+/* PROMO */
+.promo{margin:4px 0;background:var(--panel);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:60px 6%;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.promo-tag{font-family:'Barlow Condensed',sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.25em;text-transform:uppercase;color:var(--lime);margin-bottom:16px}
+.promo-h{font-family:'Barlow Condensed',sans-serif;font-size:clamp(2.4rem,4vw,4rem);font-weight:900;text-transform:uppercase;color:var(--white);line-height:.93;letter-spacing:-.01em;margin-bottom:18px}
+.promo-sub{font-size:.88rem;color:var(--grey);font-weight:300;line-height:1.7;max-width:380px}
+.code-box{background:var(--void);border:1px solid var(--border2);border-radius:8px;padding:36px;text-align:center}
+.code-l{font-family:var(--mono);font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--grey);margin-bottom:14px}
+.code-big{font-family:'Barlow Condensed',sans-serif;font-size:3rem;font-weight:900;letter-spacing:.1em;color:var(--lime);display:block;margin-bottom:6px}
+.code-note{font-size:.76rem;color:var(--grey2);margin-bottom:20px}
+.copy-b{background:var(--lime);color:var(--black);border:none;padding:11px 28px;border-radius:4px;font-family:'Barlow Condensed',sans-serif;font-size:.88rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:all .2s}
+.copy-b:hover{background:var(--lime2)}
+
+/* WHY */
+.why{padding:80px 5%;background:var(--void);border-top:1px solid var(--border)}
+.wgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:52px}
+.wcard{padding:36px 30px;background:var(--panel);border:1px solid var(--border);transition:all .3s;position:relative;overflow:hidden}
+.wcard::before{content:'';position:absolute;top:0;left:0;width:3px;height:0;background:var(--lime);transition:height .3s}
+.wcard:hover::before{height:100%}
+.wcard:hover{background:#111}
+.wnum{font-family:'Barlow Condensed',sans-serif;font-size:3.4rem;font-weight:900;color:var(--border2);line-height:1;margin-bottom:16px;letter-spacing:-.02em;transition:color .3s}
+.wcard:hover .wnum{color:var(--lime)}
+.wcard h3{font-family:'Barlow Condensed',sans-serif;font-size:1.15rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--white);margin-bottom:10px}
+.wcard p{font-size:.83rem;color:var(--grey);line-height:1.7;font-weight:300}
+
+/* NEWSLETTER */
+.nl{border-top:1px solid var(--border);padding:72px 5%;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.nl p{font-size:.88rem;color:var(--grey);font-weight:300;line-height:1.7;margin-top:16px;max-width:360px}
+.nl-form{display:flex;border:1px solid var(--border2);border-radius:4px;overflow:hidden;transition:border-color .2s;margin-bottom:10px}
+.nl-form:focus-within{border-color:var(--lime)}
+.nl-form input{flex:1;background:var(--void);border:none;padding:14px 18px;font-family:'Plus Jakarta Sans',sans-serif;font-size:.88rem;color:var(--white);outline:none}
+.nl-form input::placeholder{color:var(--grey2)}
+.nl-form button{background:var(--lime);color:var(--black);border:none;padding:14px 22px;font-family:'Barlow Condensed',sans-serif;font-size:.88rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;white-space:nowrap;transition:background .2s}
+.nl-form button:hover{background:var(--lime2)}
+.nl-fine{font-family:var(--mono);font-size:.6rem;color:var(--grey2);letter-spacing:.04em}
+
+/* FOOTER */
+footer{background:var(--void);border-top:1px solid var(--border);padding:64px 5% 32px}
+.ft{display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:48px;margin-bottom:52px;padding-bottom:52px;border-bottom:1px solid var(--border)}
+.fb-logo{font-family:'Barlow Condensed',sans-serif;font-size:2rem;font-weight:900;color:var(--white);letter-spacing:.06em}
+.fb-logo span{color:var(--lime)}
+.fb p{font-size:.83rem;color:var(--grey);font-weight:300;line-height:1.7;margin-top:14px;max-width:250px}
+.socials{display:flex;gap:8px;margin-top:22px}
+.sb{width:36px;height:36px;background:var(--panel);border:1px solid var(--border2);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:.88rem;cursor:pointer;color:var(--grey);transition:all .2s;text-decoration:none}
+.sb:hover{background:var(--lime);color:var(--black);border-color:var(--lime)}
+.fc h5{font-family:'Barlow Condensed',sans-serif;font-size:.75rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--white);margin-bottom:18px}
+.fc ul{list-style:none}
+.fc li{margin-bottom:9px}
+.fc a{font-size:.82rem;color:var(--grey);text-decoration:none;font-weight:300;transition:color .2s}
+.fc a:hover{color:var(--lime)}
+.cr{display:flex;align-items:flex-start;gap:10px;font-size:.8rem;color:var(--grey);font-weight:300;margin-bottom:10px;line-height:1.5}
+.fbot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.fbot p{font-family:var(--mono);font-size:.62rem;color:var(--grey2);letter-spacing:.04em}
+.pays{display:flex;gap:6px}
+.pay{background:var(--panel);border:1px solid var(--border2);color:var(--grey);font-family:var(--mono);font-size:.6rem;padding:4px 9px;border-radius:3px;font-weight:700}
+
+/* CART DRAWER */
+.dbg{position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:2000;opacity:0;visibility:hidden;transition:all .3s;backdrop-filter:blur(6px)}
+.dbg.on{opacity:1;visibility:visible}
+.drawer{position:fixed;top:0;right:0;width:min(440px,95vw);height:100vh;background:var(--void);border-left:1px solid var(--border);z-index:2001;transform:translateX(100%);transition:transform .35s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column}
+.drawer.on{transform:translateX(0)}
+.dh{padding:22px 24px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between}
+.dh h2{font-family:'Barlow Condensed',sans-serif;font-size:1.3rem;font-weight:900;letter-spacing:.1em;text-transform:uppercase;color:var(--white)}
+.dc{background:var(--panel);border:1px solid var(--border2);color:var(--grey);width:36px;height:36px;border-radius:4px;font-size:1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s}
+.dc:hover{border-color:var(--lime);color:var(--lime)}
+.dbody{flex:1;overflow-y:auto;padding:20px 24px}
+.dempty{height:60%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:var(--grey2)}
+.dempty .ei{font-size:2.8rem;margin-bottom:14px;opacity:.3}
+.dempty p{font-size:.88rem;font-weight:300}
+.ci{display:flex;gap:13px;padding:16px 0;border-bottom:1px solid var(--border)}
+.ci-img{width:62px;height:70px;object-fit:cover;border-radius:3px;background:var(--panel);flex-shrink:0;filter:grayscale(10%)}
+.ci-info{flex:1;min-width:0}
+.ci-cat{font-family:var(--mono);font-size:.56rem;color:var(--lime);letter-spacing:.12em;text-transform:uppercase;margin-bottom:3px}
+.ci-name{font-family:'Barlow Condensed',sans-serif;font-size:.98rem;font-weight:700;color:var(--white);margin-bottom:9px;line-height:1.2}
+.ci-ctrl{display:flex;align-items:center;gap:7px}
+.qb{background:var(--panel);border:1px solid var(--border2);color:var(--white);width:27px;height:27px;border-radius:3px;font-size:1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s}
+.qb:hover{background:var(--lime);color:var(--black);border-color:var(--lime)}
+.qn{font-family:var(--mono);font-size:.82rem;font-weight:700;color:var(--white);min-width:22px;text-align:center}
+.rmb{background:none;border:none;font-family:var(--mono);font-size:.58rem;color:var(--grey2);letter-spacing:.08em;text-transform:uppercase;cursor:pointer;margin-left:5px;transition:color .2s;padding:0}
+.rmb:hover{color:var(--red)}
+.ci-pr{font-family:'Barlow Condensed',sans-serif;font-size:1.05rem;font-weight:900;color:var(--lime);white-space:nowrap}
+.dfoot{padding:20px 24px;border-top:1px solid var(--border);background:var(--panel)}
+.dr,.sr{display:flex;justify-content:space-between;font-size:.82rem;color:var(--grey);margin-bottom:7px}
+.tr{display:flex;justify-content:space-between;border-top:1px solid var(--border);padding-top:14px;margin:8px 0 20px}
+.tr span:first-child{font-family:'Barlow Condensed',sans-serif;font-size:.95rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--white)}
+.tr span:last-child{font-family:'Barlow Condensed',sans-serif;font-size:1.3rem;font-weight:900;color:var(--lime)}
+.chk-b{width:100%;background:var(--lime);color:var(--black);border:none;padding:15px;border-radius:4px;font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:900;letter-spacing:.15em;text-transform:uppercase;cursor:pointer;transition:all .2s;margin-bottom:9px}
+.chk-b:hover{background:var(--lime2)}
+.cnt-b{width:100%;background:none;border:1px solid var(--border2);padding:12px;border-radius:4px;font-family:'Barlow Condensed',sans-serif;font-size:.85rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;color:var(--grey);transition:all .2s;margin-bottom:12px}
+.cnt-b:hover{border-color:var(--lime);color:var(--lime)}
+.fsn{font-family:var(--mono);font-size:.6rem;color:var(--grey2);text-align:center;letter-spacing:.04em}
+.fsn strong{color:var(--lime)}
+
+/* MODAL */
+.mbg{position:fixed;inset:0;background:rgba(0,0,0,.82);z-index:3000;opacity:0;visibility:hidden;transition:all .3s;display:flex;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(10px)}
+.mbg.on{opacity:1;visibility:visible}
+.mbox{background:var(--panel);border:1px solid var(--border2);border-radius:6px;max-width:740px;width:100%;display:grid;grid-template-columns:1fr 1fr;overflow:hidden;transform:scale(.92) translateY(20px);transition:transform .3s;position:relative}
+.mbg.on .mbox{transform:scale(1) translateY(0)}
+.mimg{height:440px;object-fit:cover;width:100%;filter:grayscale(15%);background:var(--void)}
+.mbody{padding:34px 30px;display:flex;flex-direction:column;overflow-y:auto}
+.m-cat{font-family:var(--mono);font-size:.6rem;color:var(--lime);letter-spacing:.18em;text-transform:uppercase;margin-bottom:10px}
+.m-name{font-family:'Barlow Condensed',sans-serif;font-size:1.85rem;font-weight:900;text-transform:uppercase;color:var(--white);line-height:1;letter-spacing:.02em;margin-bottom:13px}
+.m-price{font-family:'Barlow Condensed',sans-serif;font-size:1.9rem;font-weight:900;color:var(--lime);margin-bottom:16px}
+.m-desc{font-size:.84rem;color:var(--grey);line-height:1.7;font-weight:300;flex:1;margin-bottom:24px}
+.m-qlabel{font-family:var(--mono);font-size:.6rem;color:var(--grey2);letter-spacing:.12em;text-transform:uppercase;margin-bottom:9px}
+.qrow{display:flex;align-items:center;border:1px solid var(--border2);border-radius:4px;width:fit-content;overflow:hidden;margin-bottom:18px}
+.qrow .qb{width:40px;height:40px;border-radius:0;border:none;border-right:1px solid var(--border2)}
+.qrow .qb:last-of-type{border-right:none;border-left:1px solid var(--border2)}
+.qrow .qn{padding:0 20px;font-size:1rem;line-height:40px}
+.m-add{width:100%;background:var(--lime);color:var(--black);border:none;padding:15px;border-radius:4px;font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:900;letter-spacing:.15em;text-transform:uppercase;cursor:pointer;transition:all .2s}
+.m-add:hover{background:var(--lime2)}
+.mcb{position:absolute;top:14px;right:14px;background:rgba(0,0,0,.55);border:1px solid var(--border2);color:var(--white);width:34px;height:34px;border-radius:4px;font-size:1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:10;transition:all .2s}
+.mcb:hover{background:var(--red);border-color:var(--red)}
+
+/* TOAST */
+.toast{position:fixed;bottom:28px;left:50%;transform:translateX(-50%) translateY(60px);background:var(--lime);color:var(--black);padding:12px 24px;border-radius:4px;font-family:'Barlow Condensed',sans-serif;font-size:.92rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;z-index:4000;opacity:0;transition:all .35s cubic-bezier(.4,0,.2,1);white-space:nowrap;box-shadow:0 8px 28px rgba(170,255,0,.25)}
+.toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+
+@keyframes si{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+
+/* MOBILE */
+@media(max-width:1100px){.wgrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:900px){
+  .nav-links{display:none}.hburg{display:flex}
+  .hero{grid-template-columns:1fr;min-height:auto}
+  .hero-right{height:45vh}.hero-right::before{background:linear-gradient(to top,var(--black) 0%,transparent 40%)}
+  .hero-left{padding:60px 5%}
+  .trust{grid-template-columns:1fr 1fr}
+  .ft{grid-template-columns:1fr 1fr;gap:30px}
+  .nl{grid-template-columns:1fr}.promo{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  .pgrid{grid-template-columns:repeat(2,1fr)}
+  .h1{font-size:3rem}.metrics{flex-wrap:wrap}
+  .met{flex:0 0 50%;margin-bottom:18px}
+  .trust{grid-template-columns:1fr}
+  .tc{border-right:none}.wgrid{grid-template-columns:1fr}
+  .ft{grid-template-columns:1fr}
+  .mbox{grid-template-columns:1fr}.mimg{height:200px}
+  .tb{padding:11px 16px;font-size:.82rem}
+  .cta-row{flex-direction:column}
+  .hero-left{padding:40px 5% 50px}
+}
+.mobnav{display:none;position:fixed;inset:0;background:var(--void);z-index:1500;flex-direction:column;align-items:center;justify-content:center;gap:26px;border-top:3px solid var(--lime)}
+.mobnav.on{display:flex}
+.mobnav a{font-family:'Barlow Condensed',sans-serif;font-size:2.7rem;font-weight:900;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;color:var(--white);transition:color .15s}
+.mobnav a:hover{color:var(--lime)}
+.mnc{position:absolute;top:18px;right:18px;background:none;border:1px solid var(--border2);color:var(--white);width:42px;height:42px;border-radius:4px;font-size:1.2rem;cursor:pointer;display:flex;align-items:center;justify-content:center}
+</style>
+</head>
+<body>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker-track">
+    <span class="ti">🇰🇪 SOKO — Kenyan Culture<span class="b">✦</span></span>
+    <span class="ti">Free Shipping Sweden over €60<span class="b">✦</span></span>
+    <span class="ti">Code <b>NAIROBI10</b> — 10% off first order<span class="b">✦</span></span>
+    <span class="ti">🇸🇪 Delivered across Sverige<span class="b">✦</span></span>
+    <span class="ti">New drops every week<span class="b">✦</span></span>
+    <span class="ti">Swish · Klarna · Visa accepted<span class="b">✦</span></span>
+    <span class="ti">🇰🇪 SOKO — Kenyan Culture<span class="b">✦</span></span>
+    <span class="ti">Free Shipping Sweden over €60<span class="b">✦</span></span>
+    <span class="ti">Code <b>NAIROBI10</b> — 10% off first order<span class="b">✦</span></span>
+    <span class="ti">🇸🇪 Delivered across Sverige<span class="b">✦</span></span>
+    <span class="ti">New drops every week<span class="b">✦</span></span>
+    <span class="ti">Swish · Klarna · Visa accepted<span class="b">✦</span></span>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="logo">SOKO<span class="tm">™</span><span class="logo-pill">SE</span></a>
+  <ul class="nav-links">
+    <li><a href="#shop">Shop</a></li>
+    <li><a href="#shop" onclick="sw('food')">Food</a></li>
+    <li><a href="#shop" onclick="sw('women')">Women</a></li>
+    <li><a href="#shop" onclick="sw('men')">Men</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="nico" title="Search">🔍</button>
+    <button class="nico" title="Wishlist">♡</button>
+    <button class="cart-trig" onclick="toggleDraw()">CART <span class="cnt" id="cc">0</span></button>
+    <div class="hburg" onclick="toggleMob()"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<!-- MOBILE NAV -->
+<div class="mobnav" id="mobnav">
+  <button class="mnc" onclick="toggleMob()">✕</button>
+  <a href="#shop" onclick="toggleMob()">Shop All</a>
+  <a href="#shop" onclick="sw('food');toggleMob()">Food</a>
+  <a href="#shop" onclick="sw('women');toggleMob()">Women</a>
+  <a href="#shop" onclick="sw('men');toggleMob()">Men</a>
+  <a href="#about" onclick="toggleMob()">About</a>
+  <a href="#contact" onclick="toggleMob()">Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="eyebrow">
+      <span class="pill"><span class="live-dot"></span>Live · Stockholm, Sweden</span>
+    </div>
+    <h1 class="h1">KENYAN<br><span class="out">CULTURE</span><br><em>Swedish<br>Streets.</em></h1>
+    <p class="hero-desc">Real Kenyan food, fire fashion &amp; handcrafted drip — <strong>delivered across Sweden.</strong> Prices that actually hit different.</p>
+    <div class="cta-row">
+      <a href="#shop" class="btn-lime">Shop Now →</a>
+      <a href="#about" class="btn-ghost">Our Story</a>
+    </div>
+    <div class="metrics">
+      <div class="met"><div class="met-n">200+</div><div class="met-l">Products</div></div>
+      <div class="met"><div class="met-n">48H</div><div class="met-l">SE Delivery</div></div>
+      <div class="met"><div class="met-n">100%</div><div class="met-l">Authentic</div></div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <img class="hero-img" src="https://images.unsplash.com/photo-1594463750939-f9ee21e5e78a?w=900&h=1100&fit=crop&q=88" alt="Kenyan fashion model" loading="eager">
+    <div class="htag"><small>Starting from</small><strong>€2.00</strong></div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<div class="trust">
+  <div class="tc"><span class="tc-ico">🚚</span><div><strong>Express Delivery</strong><span>1–3 days across Sweden</span></div></div>
+  <div class="tc"><span class="tc-ico">🔐</span><div><strong>Secure Payment</strong><span>Swish · Klarna · Card</span></div></div>
+  <div class="tc"><span class="tc-ico">✅</span><div><strong>100% Authentic</strong><span>Direct from Kenya</span></div></div>
+  <div class="tc"><span class="tc-ico">↩️</span><div><strong>14-Day Returns</strong><span>No hassle guarantee</span></div></div>
+</div>
+
+<!-- SHOP -->
+<section id="shop">
+  <div class="sec-h">
+    <div>
+      <div class="kicker">// The Collection</div>
+      <h2 class="sec-t">SHOP<br><span class="out-t">THE DROPS</span></h2>
+    </div>
+    <div class="sec-count" id="icount">— items</div>
+  </div>
+  <div class="shop-area">
+    <div class="tabs">
+      <button class="tb active" id="tab-food" onclick="sw('food')">🍃 Food &amp; Pantry <span class="tb-badge" id="b-food">21</span></button>
+      <button class="tb" id="tab-women" onclick="sw('women')">💎 Women <span class="tb-badge" id="b-women">15</span></button>
+      <button class="tb" id="tab-men" onclick="sw('men')">👔 Men <span class="tb-badge" id="b-men">10</span></button>
+    </div>
+    <div class="tp active" id="p-food"><div class="pgrid" id="g-food"></div></div>
+    <div class="tp" id="p-women"><div class="pgrid" id="g-women"></div></div>
+    <div class="tp" id="p-men"><div class="pgrid" id="g-men"></div></div>
+  </div>
+</section>
+
+<!-- PROMO -->
+<div class="promo">
+  <div>
+    <div class="promo-tag">// Welcome Offer · New Customers</div>
+    <h3 class="promo-h">10% OFF<br>YOUR FIRST<br>DROP.</h3>
+    <p class="promo-sub">New to Soko? Use the code at checkout. One time, all items, no min spend. Don't sleep.</p>
+  </div>
+  <div class="code-box">
+    <div class="code-l">// Your discount code</div>
+    <span class="code-big">NAIROBI10</span>
+    <div class="code-note">First order only · All products included</div>
+    <button class="copy-b" onclick="copyPromo()">Copy Code</button>
+  </div>
+</div>
+
+<!-- WHY SOKO -->
+<section class="why" id="about">
+  <div class="sec-h" style="padding:0 0 0 0">
+    <div><div class="kicker">// Why Soko</div><h2 class="sec-t">BUILT FOR<br><span class="out-t">THE DIASPORA.</span></h2></div>
+  </div>
+  <div class="wgrid">
+    <div class="wcard"><div class="wnum">01</div><h3>Sourced Direct from Nairobi</h3><p>No middlemen. Every product is hand-sourced directly from trusted Kenyan suppliers and imported fresh to our Stockholm warehouse weekly.</p></div>
+    <div class="wcard"><div class="wnum">02</div><h3>Sweden's Best Prices</h3><p>We price below competitors so the Kenyan community in Sweden can always afford authentic goods without compromise. Real price, real product.</p></div>
+    <div class="wcard"><div class="wnum">03</div><h3>Fast Nordic Delivery</h3><p>Dispatched from Stockholm. Most orders arrive in 1–3 business days anywhere in Sweden. Track your drop in real time.</p></div>
+    <div class="wcard"><div class="wnum">04</div><h3>Community First Always</h3><p>Soko (Swahili for "market") exists because of the Kenyan diaspora in Sweden. We're not just a store — we're your people here.</p></div>
+    <div class="wcard"><div class="wnum">05</div><h3>Fresh &amp; Quality Checked</h3><p>All food meets EU import standards. Fashion is quality-inspected before shipping. We don't sell anything we wouldn't use ourselves.</p></div>
+    <div class="wcard"><div class="wnum">06</div><h3>Your Language. Your People.</h3><p>Chat with us in Swahili, Kikuyu, Luo or English. We get it because we live it — Kenyan in Sweden, serving Kenyans in Sweden.</p></div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="nl" id="contact">
+  <div>
+    <div class="kicker">// Stay Connected</div>
+    <h2 class="sec-t">GET THE<br>LATEST<br><span class="out-t">DROPS.</span></h2>
+    <p>Join 2,000+ Kenyans in Sweden. New arrivals, flash deals, community news — direct to your inbox.</p>
+  </div>
+  <div>
+    <div class="nl-form">
+      <input type="email" id="nle" placeholder="your@email.com">
+      <button onclick="subNL()">Subscribe →</button>
+    </div>
+    <div class="nl-fine">// No spam. Unsubscribe anytime. We keep it real.</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ft">
+    <div class="fb">
+      <div class="fb-logo">SOKO<span>™</span></div>
+      <p>Sweden's urban destination for authentic Kenyan food, fashion and culture. Bringing Nairobi vibes to the Nordic streets since 2024.</p>
+      <div class="socials">
+        <a class="sb" href="#">📷</a><a class="sb" href="#">🎵</a><a class="sb" href="#">👥</a><a class="sb" href="#">💬</a>
+      </div>
+    </div>
+    <div class="fc">
+      <h5>Shop</h5>
+      <ul>
+        <li><a href="#" onclick="sw('food')">Food &amp; Pantry</a></li>
+        <li><a href="#" onclick="sw('women')">Women's Collection</a></li>
+        <li><a href="#" onclick="sw('men')">Men's Collection</a></li>
+        <li><a href="#">New Arrivals</a></li>
+        <li><a href="#">Best Sellers</a></li>
+        <li><a href="#">Gift Sets</a></li>
+      </ul>
+    </div>
+    <div class="fc">
+      <h5>Info</h5>
+      <ul>
+        <li><a href="#">About Soko</a></li>
+        <li><a href="#">Shipping Policy</a></li>
+        <li><a href="#">Return Policy</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="fc">
+      <h5>Contact</h5>
+      <div class="cr">📍<span>Stockholm, Sweden<br>(All of Sverige)</span></div>
+      <div class="cr">📧<span>hujambo@soko.se</span></div>
+      <div class="cr">💬<span>WhatsApp: +46 70 000 0000</span></div>
+      <div class="cr">🕐<span>Mon–Fri 09:00–18:00 CET</span></div>
+    </div>
+  </div>
+  <div class="fbot">
+    <p>© 2024 SOKO™ Sweden — All rights reserved · Org.nr: 559XXX-XXXX · Stockholm, Sverige</p>
+    <div class="pays">
+      <span class="pay">SWISH</span><span class="pay">KLARNA</span><span class="pay">VISA</span><span class="pay">MC</span><span class="pay">PAYPAL</span>
+    </div>
+  </div>
+</footer>
+
+<!-- CART DRAWER -->
+<div class="dbg" id="dbg" onclick="toggleDraw()"></div>
+<div class="drawer" id="drawer">
+  <div class="dh">
+    <h2>Your Cart 🛒</h2>
+    <button class="dc" onclick="toggleDraw()">✕</button>
+  </div>
+  <div class="dbody" id="dbody">
+    <div class="dempty"><div class="ei">🛒</div><p>Cart's empty.<br>Go fill it up ↑</p></div>
+  </div>
+  <div class="dfoot" id="dfoot" style="display:none">
+    <div class="dr"><span>Subtotal</span><span id="dsub">€0.00</span></div>
+    <div class="sr"><span>Shipping (Sweden)</span><span id="dship">€5.90</span></div>
+    <div class="tr"><span>Total</span><span id="dtot">€0.00</span></div>
+    <button class="chk-b" onclick="doChk()">Checkout Now →</button>
+    <button class="cnt-b" onclick="toggleDraw()">Continue Shopping</button>
+    <div class="fsn">🚚 <strong>Free shipping</strong> on orders over €60</div>
+  </div>
+</div>
+
+<!-- MODAL -->
+<div class="mbg" id="mbg" onclick="closeMod(event)">
+  <div class="mbox">
+    <button class="mcb" onclick="closeMB()">✕</button>
+    <img id="mi" class="mimg" src="" alt="">
+    <div class="mbody">
+      <div class="m-cat" id="mcat"></div>
+      <h2 class="m-name" id="mname"></h2>
+      <div class="m-price" id="mprice"></div>
+      <p class="m-desc" id="mdesc"></p>
+      <div class="m-qlabel">// Quantity</div>
+      <div class="qrow">
+        <button class="qb" onclick="mq(-1)">−</button>
+        <span class="qn" id="mqty">1</span>
+        <button class="qb" onclick="mq(1)">+</button>
+      </div>
+      <button class="m-add" onclick="addMod()">Add to Cart →</button>
+    </div>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<script>
+const DB={
+  food:[
+    {id:'f01',name:'Sukuma Wiki (Kale)',price:8,img:'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=500&h=600&fit=crop',cat:'Food',badge:'best',desc:'Authentic Kenyan sukuma wiki (collard greens). The essential side dish for ugali. Vacuum-sealed for freshness. A Kenyan staple now in Sweden.'},
+    {id:'f02',name:'Pilau Masala Spice',price:11,img:'https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=500&h=600&fit=crop',cat:'Food',badge:'hot',desc:'Tropical Heat Pilau Masala — the authentic Kenyan spice blend for perfect pilau. Rich with cumin, cardamom, cinnamon and clove. A kitchen essential.'},
+    {id:'f03',name:'Dormans Coffee 250g',price:13,img:'https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=500&h=600&fit=crop',cat:'Food',badge:'new',desc:'Premium Kenyan Highland medium roast from Dormans — bright acidity, clean finish. The gold standard of Kenyan coffee.'},
+    {id:'f04',name:'Kenylon Githeri 420g',price:9,img:'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&h=600&fit=crop',cat:'Food',badge:'',desc:'Classic Kenyan Githeri — hearty corn and bean mix. Nutritious, comforting and quintessentially Kenyan. Ready to cook fast.'},
+    {id:'f05',name:'Royco Mchuzi Mix Chicken',price:8,img:'https://images.unsplash.com/photo-1579613832125-5d34a13ffe2a?w=500&h=600&fit=crop',cat:'Food',badge:'best',desc:'Royco Mchuzi Mix Chicken Flavour 200g — the iconic Kenyan sauce seasoning that transforms any meal. Non-negotiable pantry item.'},
+    {id:'f06',name:'Premium Ugali Flour',price:8,img:'https://images.unsplash.com/photo-1574781490835-66e4dc8db01b?w=500&h=600&fit=crop',cat:'Food',badge:'new',desc:'Premium finely milled Ugali Flour — smooth, authentic texture every time. The cornerstone of every Kenyan table.'},
+    {id:'f07',name:'Mabuyu Snack (Red) 100g',price:6,img:'https://images.unsplash.com/photo-1559181567-c3190ca9959b?w=500&h=600&fit=crop',cat:'Food',badge:'',desc:'Original red Mabuyu — the beloved Kenyan baobab seed snack. Nostalgic, chewy, totally addictive. Pure childhood memory in 100g.'},
+    {id:'f08',name:'Simba Mbili Curry Powder',price:7,img:'https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=500&h=600&fit=crop',cat:'Food',badge:'',desc:'Simba Mbili Curry Powder 200g — rich aromatic blend for authentic Kenyan-style curries. Deep, warm and completely essential.'},
+    {id:'f09',name:'Zesta Red Plum Jam 300g',price:6,img:'https://images.unsplash.com/photo-1553531384-397c80973a0b?w=500&h=600&fit=crop',cat:'Food',badge:'',desc:'Zesta Red Plum Jam 300g — the beloved Kenyan breakfast jam. Perfect with mandazi, chapati or toast. Taste of home every morning.'},
+    {id:'f10',name:'Cadbury Hot Chocolate 300g',price:8,img:'https://images.unsplash.com/photo-1548159858-3da68b2c6f4c?w=500&h=600&fit=crop',cat:'Food',badge:'',desc:'Cadbury 3-in-1 Hot Chocolate 300g — rich, creamy Kenyan drinking chocolate. Perfect comfort for cold Swedish winters.'},
+    {id:'f11',name:'Kunde Vegetables',price:8,img:'https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=500&h=600&fit=crop',cat:'Food',badge:'',desc:'Kenyan Kunde (cowpea leaves) — nutritious traditional vegetable rich in iron and protein. A Western Kenyan favourite.'},
+    {id:'f12',name:'Sagaa Vegetables',price:8,img:'https://images.unsplash.com/photo-1540420773420-3366772f4999?w=500&h=600&fit=crop',cat:'Food',badge:'',desc:'Sagaa (spider plant) — slightly bitter, powerfully nutritious. A prized traditional Luo delicacy now available in Sweden.'},
+    {id:'f13',name:'Dodo / Terere Amaranth',price:8,img:'https://images.unsplash.com/photo-1576045057995-568f588f82fb?w=500&h=600&fit=crop',cat:'Food',badge:'',desc:'Dodo/Terere amaranth greens — vibrant, iron-rich, traditionally cooked with ugali. Comfort vegetable beloved across Kenya.'},
+    {id:'f14',name:'Knorr Beef Cubes ×6',price:3.5,img:'https://images.unsplash.com/photo-1563636619-e9143da7973b?w=500&h=600&fit=crop',cat:'Food',badge:'',desc:'Knorr Beef Cubes — 6 × 8.5g packs. Deep beef flavour for stews, soups and sauces. Essential for Kenyan home cooking.'},
+    {id:'f15',name:'Knorr Chicken Cubes ×6',price:4,img:'https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=500&h=600&fit=crop',cat:'Food',badge:'',desc:'Knorr Chicken Cubes 6-pack. Rich chicken depth in every cube. Elevates rice, soups and stews. A Kenyan kitchen staple.'},
+    {id:'f16',name:'Chapa Mandashi Baking Powder',price:2.6,img:'https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=500&h=600&fit=crop',cat:'Food',badge:'',desc:'Chapa Mandashi — the OG Kenyan baking powder for perfect mandazi, chapati and cakes every single time.'},
+    {id:'f17',name:'Zesta Tomato Garlic Sauce',price:8,img:'https://images.unsplash.com/photo-1598103442097-8f57c24f9734?w=500&h=600&fit=crop',cat:'Food',badge:'new',desc:'Zesta Tomato Garlic Sauce 400g — rich Kenyan-style tomato with roasted garlic. Goes over rice, mukimo or pasta. No-brainer.'},
+    {id:'f18',name:'Raha Drinking Chocolate 400g',price:11,img:'https://images.unsplash.com/photo-1542990253-a781e04c0082?w=500&h=600&fit=crop',cat:'Food',badge:'new',desc:'Raha Drinking Chocolate Powder 400g — classic Kenyan hot chocolate brand. Rich, warming and made for cold Nordic mornings.'},
+    {id:'f19',name:'Mrenda Vegetables',price:8,img:'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=500&h=600&fit=crop',cat:'Food',badge:'',desc:'Mrenda (jute mallow) — sticky, nutritious, deeply flavoured. A Western Kenyan comfort food for the diaspora in Sweden.'},
+    {id:'f20',name:'Pure Glucose 100g',price:3,img:'https://images.unsplash.com/photo-1581600140682-d4e68c8cdc30?w=500&h=600&fit=crop',cat:'Food',badge:'',desc:'Kenyan Pure Glucose 100g — for baking, cooking and sports drinks. Used across Kenyan kitchens for decades.'},
+    {id:'f21',name:'Udongo Edible Clay 100g',price:7,img:'https://images.unsplash.com/photo-1567360425618-1594206637d2?w=500&h=600&fit=crop',cat:'Food',badge:'',desc:'Authentic Kenyan Udongo edible clay 100g — a traditional clay especially popular during pregnancy. Culturally significant and carefully sourced.'},
+  ],
+  women:[
+    {id:'w01',name:'Off-Shoulder Dera Dress',price:34,img:'https://images.unsplash.com/photo-1594463750939-f9ee21e5e78a?w=500&h=600&fit=crop',cat:'Women',badge:'best',desc:'Stunning off-shoulder Kenyan Dera dress in vivid African print. Flowy, elegant, culturally rich. Sizes S–XL.'},
+    {id:'w02',name:'Ankara Wrap Dress',price:38,img:'https://images.unsplash.com/photo-1551163943-3f6a855d1153?w=500&h=600&fit=crop',cat:'Women',badge:'new',desc:'Bold Ankara wrap dress — modern silhouette, African soul. Makes a statement. Sizes XS–XXL.'},
+    {id:'w03',name:'Maasai Waist Beads',price:2,img:'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=500&h=600&fit=crop',cat:'Women',badge:'',desc:'Handmade Maasai waist beads — a symbol of African femininity. Adjustable, multiple colour options.'},
+    {id:'w04',name:'Blue Beaded Maasai Earrings',price:3,img:'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=500&h=600&fit=crop',cat:'Women',badge:'hot',desc:'Handcrafted blue Maasai beaded earrings. Lightweight, vibrant and unique — made by Maasai artisans.'},
+    {id:'w05',name:'Orange Maasai Earrings',price:4,img:'https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=500&h=600&fit=crop',cat:'Women',badge:'',desc:'Striking orange Maasai beaded earrings — bold statement jewellery made with traditional Maasai techniques.'},
+    {id:'w06',name:'African Necklace & Bracelet Set',price:11,img:'https://images.unsplash.com/photo-1573408301185-9519f94816ca?w=500&h=600&fit=crop',cat:'Women',badge:'new',desc:'Long African beaded necklace with matching bracelet. Elevates any outfit. Authentic Kenyan craftsmanship.'},
+    {id:'w07',name:'Beaded Choker Necklace',price:6,img:'https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?w=500&h=600&fit=crop',cat:'Women',badge:'',desc:'Colourful Kenyan beaded choker — close-fitting, vibrant, wearable art. Pairs with everything.'},
+    {id:'w08',name:'Blue Beaded Necklace',price:5,img:'https://images.unsplash.com/photo-1584302179602-e4c3d3fd629d?w=500&h=600&fit=crop',cat:'Women',badge:'',desc:'Blue Maasai beaded necklace — blue, gold and white seed beads. Handmade. Goes with everything.'},
+    {id:'w09',name:'Black Maasai Necklace',price:5,img:'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500&h=600&fit=crop',cat:'Women',badge:'',desc:'Bold black Maasai beaded necklace — sleek, powerful, modern. Handmade by Maasai women artisans.'},
+    {id:'w10',name:'Ankle Bracelet – Kenyan Flag',price:2,img:'https://images.unsplash.com/photo-1631192258255-39bef7f43ad6?w=500&h=600&fit=crop',cat:'Women',badge:'hot',desc:'Ankle bracelet in Kenyan flag colours — red, white, black, green. Patriotic diaspora fashion. Adjustable.'},
+    {id:'w11',name:'Ankle Bracelet – Caribbean',price:2,img:'https://images.unsplash.com/photo-1629367494173-c78a56567877?w=500&h=600&fit=crop',cat:'Women',badge:'',desc:'Caribbean-style ankle bracelet — bright, playful, handbeaded. Tropical colour wherever you walk.'},
+    {id:'w12',name:'Violet Crafted Earrings',price:2,img:'https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=500&h=600&fit=crop',cat:'Women',badge:'',desc:'Violet handcrafted Maasai earrings — delicate, feminine, uniquely beautiful. Handmade in Kenya.'},
+    {id:'w13',name:'Pink Crafted Earrings',price:3,img:'https://images.unsplash.com/photo-1611085583191-a3b181a88401?w=500&h=600&fit=crop',cat:'Women',badge:'',desc:'Pink wooden Maasai-inspired earrings. Lightweight, elegant. Perfect for everyday or special occasions.'},
+    {id:'w14',name:'African Print Tote Bag',price:28,img:'https://images.unsplash.com/photo-1591561954555-607968c989ab?w=500&h=600&fit=crop',cat:'Women',badge:'new',desc:'Bold Kitenge fabric tote bag — spacious, ethically made by Kenyan artisans. Durable and undeniably stylish.'},
+    {id:'w15',name:'Kitenge Headwrap',price:18,img:'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=500&h=600&fit=crop',cat:'Women',badge:'',desc:'Vibrant Kenyan Kitenge fabric headwrap — versatile, elegant, a celebration of African beauty. One size.'},
+  ],
+  men:[
+    {id:'m01',name:'Kikoi Beach Sarong',price:22,img:'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=600&fit=crop',cat:'Men',badge:'best',desc:'Authentic Kenyan Kikoi — traditional striped cotton sarong. Worn at beach, home or as streetwear. Coastal heritage in one piece.'},
+    {id:'m02',name:'Ankara Print Shirt',price:42,img:'https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=500&h=600&fit=crop',cat:'Men',badge:'new',desc:'Bold Ankara print men\'s shirt — tailored fit, Kenyan print. Makes a statement at any occasion. Sizes S–XXL.'},
+    {id:'m03',name:'Kanzu White Robe',price:48,img:'https://images.unsplash.com/photo-1563178406-4cdc2923acbc?w=500&h=600&fit=crop',cat:'Men',badge:'',desc:'Classic Kenyan Kanzu — traditional white men\'s robe for coastal events, weddings and celebrations. Pure cotton.'},
+    {id:'m04',name:'Maasai Shuka Blanket',price:35,img:'https://images.unsplash.com/photo-1523381294911-8d3cead13475?w=500&h=600&fit=crop',cat:'Men',badge:'hot',desc:'Authentic Maasai Shuka in classic red-and-blue plaid. Thick, warm and perfect for Swedish winters. 100% cotton.'},
+    {id:'m05',name:'Kenyan Safari Hat',price:19,img:'https://images.unsplash.com/photo-1534215754734-18e55d13e346?w=500&h=600&fit=crop',cat:'Men',badge:'',desc:'Wide-brim Kenyan safari hat in natural woven grass. Sun protection meets African style. Lightweight, foldable.'},
+    {id:'m06',name:'Maasai Leather Sandals',price:44,img:'https://images.unsplash.com/photo-1603487742131-4160ec999306?w=500&h=600&fit=crop',cat:'Men',badge:'new',desc:'Handcrafted Maasai sandals — genuine cowhide leather, made by Maasai artisans. Durable and authentically Kenyan. Sizes 39–46.'},
+    {id:'m07',name:'Kikoy Shorts',price:28,img:'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=500&h=600&fit=crop',cat:'Men',badge:'',desc:'Kenyan Kikoy-fabric shorts — lightweight, breathable. Perfect for Swedish summer. Vibrant stripes. Sizes S–XL.'},
+    {id:'m08',name:'Maasai Beaded Bracelet',price:8,img:'https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?w=500&h=600&fit=crop',cat:'Men',badge:'',desc:'Bold Maasai beaded bracelet for men — black and red on elastic. Stackable, effortlessly cool, handmade in Kenya.'},
+    {id:'m09',name:'Kenyan Coffee Gift Set',price:29,img:'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=500&h=600&fit=crop',cat:'Men',badge:'new',desc:'Premium Kenyan coffee gift set — two varieties of Kenyan Highland roast. The perfect gift for the coffee lover.'},
+    {id:'m10',name:'Swahili Coast Cologne',price:32,img:'https://images.unsplash.com/photo-1541643600914-78b084683702?w=500&h=600&fit=crop',cat:'Men',badge:'',desc:'Inspired by the Swahili coast — warm, woody, masculine. Notes of sandalwood, cedar and coastal spice. Made in Kenya.'},
+  ]
+};
+
+let cart=JSON.parse(localStorage.getItem('soko2'))||[];
+let curMod=null,mQty=1;
+function sv(){localStorage.setItem('soko2',JSON.stringify(cart));}
+
+function render(){
+  let tot=0;
+  ['food','women','men'].forEach(cat=>{
+    tot+=DB[cat].length;
+    document.getElementById('g-'+cat).innerHTML=DB[cat].map(p=>`
+      <div class="pcard" id="pc-${p.id}">
+        <div class="piw" onclick="openMod('${p.id}')">
+          <img src="${p.img}" alt="${p.name}" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=600&fit=crop'">
+          <div class="pov"></div>
+        </div>
+        ${p.badge?`<div class="pbadge ${p.badge==='best'?'b-best':p.badge==='new'?'b-new':'b-hot'}">${p.badge==='best'?'★ BEST SELLER':p.badge==='new'?'NEW DROP':'🔥 HOT'}</div>`:''}
+        <button class="pwish" onclick="twish(this)">♡</button>
+        <div class="pb">
+          <div class="pc-cat">${p.cat}</div>
+          <div class="pc-name" onclick="openMod('${p.id}')">${p.name}</div>
+          <div class="pc-foot">
+            <div class="pc-price"><span class="eur">€</span>${p.price.toFixed(2)}</div>
+            <button class="add-btn" onclick="addItem('${p.id}',this)">+ ADD</button>
+          </div>
+        </div>
+      </div>
+    `).join('');
+  });
+  document.getElementById('icount').textContent=`${tot} items in store`;
+}
+
+function addItem(id,btn){
+  const all=[...DB.food,...DB.women,...DB.men];
+  const p=all.find(x=>x.id===id);if(!p)return;
+  const ex=cart.find(x=>x.id===id);
+  if(ex)ex.qty++;else cart.push({...p,qty:1});
+  sv();rCart();showToast(`${p.name} added!`);
+  if(btn){btn.textContent='✓ ADDED';btn.classList.add('done');setTimeout(()=>{btn.textContent='+ ADD';btn.classList.remove('done');},1500);}
+}
+function cQty(id,d){
+  const it=cart.find(x=>x.id===id);if(!it)return;
+  it.qty+=d;if(it.qty<=0)cart=cart.filter(x=>x.id!==id);
+  sv();rCart();
+}
+function rmItem(id){cart=cart.filter(x=>x.id!==id);sv();rCart();}
+
+function rCart(){
+  const total=cart.reduce((s,i)=>s+i.price*i.qty,0);
+  const count=cart.reduce((s,i)=>s+i.qty,0);
+  document.getElementById('cc').textContent=count;
+  const body=document.getElementById('dbody'),foot=document.getElementById('dfoot');
+  if(!cart.length){
+    body.innerHTML='<div class="dempty"><div class="ei">🛒</div><p>Cart\'s empty.<br>Go fill it up ↑</p></div>';
+    foot.style.display='none';return;
+  }
+  foot.style.display='block';
+  body.innerHTML=cart.map(it=>`
+    <div class="ci">
+      <img class="ci-img" src="${it.img}" alt="${it.name}" onerror="this.src='https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=80&h=90&fit=crop'">
+      <div class="ci-info">
+        <div class="ci-cat">${it.cat}</div>
+        <div class="ci-name">${it.name}</div>
+        <div class="ci-ctrl">
+          <button class="qb" onclick="cQty('${it.id}',-1)">−</button>
+          <span class="qn">${it.qty}</span>
+          <button class="qb" onclick="cQty('${it.id}',1)">+</button>
+          <button class="rmb" onclick="rmItem('${it.id}')">Remove</button>
+        </div>
+      </div>
+      <div class="ci-pr">€${(it.price*it.qty).toFixed(2)}</div>
+    </div>
+  `).join('');
+  const ship=total>=60?0:5.90;
+  document.getElementById('dsub').textContent=`€${total.toFixed(2)}`;
+  document.getElementById('dship').textContent=ship===0?'FREE 🎉':`€${ship.toFixed(2)}`;
+  document.getElementById('dtot').textContent=`€${(total+ship).toFixed(2)}`;
+}
+
+function toggleDraw(){
+  document.getElementById('dbg').classList.toggle('on');
+  document.getElementById('drawer').classList.toggle('on');
+  document.body.style.overflow=document.getElementById('drawer').classList.contains('on')?'hidden':'';
+}
+function doChk(){showToast('Redirecting to checkout...');setTimeout(()=>alert('🛒 Checkout coming soon!\n\nPayment: Swish · Klarna · Visa\n\nTack for shopping SOKO™! 🇰🇪🇸🇪'),700);}
+
+function openMod(id){
+  const all=[...DB.food,...DB.women,...DB.men];
+  const p=all.find(x=>x.id===id);if(!p)return;
+  curMod=p;mQty=1;
+  document.getElementById('mi').src=p.img;document.getElementById('mi').alt=p.name;
+  document.getElementById('mcat').textContent=`// ${p.cat.toUpperCase()}`;
+  document.getElementById('mname').textContent=p.name;
+  document.getElementById('mprice').textContent=`€${p.price.toFixed(2)}`;
+  document.getElementById('mdesc').textContent=p.desc;
+  document.getElementById('mqty').textContent=1;
+  document.getElementById('mbg').classList.add('on');
+  document.body.style.overflow='hidden';
+}
+function closeMod(e){if(e.target===document.getElementById('mbg'))closeMB();}
+function closeMB(){document.getElementById('mbg').classList.remove('on');document.body.style.overflow='';}
+function mq(d){mQty=Math.max(1,mQty+d);document.getElementById('mqty').textContent=mQty;}
+function addMod(){
+  if(!curMod)return;
+  const ex=cart.find(x=>x.id===curMod.id);
+  if(ex)ex.qty+=mQty;else cart.push({...curMod,qty:mQty});
+  sv();rCart();showToast(`${curMod.name} added!`);closeMB();
+}
+
+function twish(btn){
+  btn.classList.toggle('on');
+  btn.textContent=btn.classList.contains('on')?'♥':'♡';
+  showToast(btn.classList.contains('on')?'♥ Saved to wishlist!':'Removed from wishlist');
+}
+
+function sw(cat){
+  ['food','women','men'].forEach(c=>{
+    document.getElementById('tab-'+c).classList.remove('active');
+    document.getElementById('p-'+c).classList.remove('active');
+  });
+  document.getElementById('tab-'+cat).classList.add('active');
+  document.getElementById('p-'+cat).classList.add('active');
+  document.getElementById('shop').scrollIntoView({behavior:'smooth'});
+}
+
+function copyPromo(){
+  navigator.clipboard.writeText('NAIROBI10')
+    .then(()=>showToast('✓ NAIROBI10 copied! Use at checkout.'))
+    .catch(()=>showToast('Code: NAIROBI10 — use at checkout'));
+}
+function subNL(){
+  const v=document.getElementById('nle').value;
+  if(!v||!v.includes('@')){showToast('Enter a valid email!');return;}
+  showToast('🎉 Subscribed! Check your inbox.');
+  document.getElementById('nle').value='';
+}
+function toggleMob(){
+  document.getElementById('mobnav').classList.toggle('on');
+  document.body.style.overflow=document.getElementById('mobnav').classList.contains('on')?'hidden':'';
+}
+
+let toastT;
+function showToast(msg){
+  clearTimeout(toastT);
+  const el=document.getElementById('toast');
+  el.textContent=msg;el.classList.add('on');
+  toastT=setTimeout(()=>el.classList.remove('on'),2600);
+}
+
+render();rCart();
+</script>
+</body>
+</html>
